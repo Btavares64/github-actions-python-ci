@@ -9,13 +9,13 @@ class TestCalculator(unittest.TestCase):
 
     def test_subtract(self):
         self.assertEqual(subtract(5, 3), 2)
-        self.assertEqual(subtract(-1, -1), -2)
+        self.assertEqual(subtract(-1, -1), 0)
         self.assertEqual(subtract(20, 19), 1)
 
     def test_divide(self):
         self.assertEqual(divide(1, 0), "error")
         self.assertEqual(divide(0, 1), 0)
-        self.assertEqual(divide(8, 2), 2)
+        self.assertEqual(divide(8, 2), 4)
 
 
 if __name__ == '__main__':
